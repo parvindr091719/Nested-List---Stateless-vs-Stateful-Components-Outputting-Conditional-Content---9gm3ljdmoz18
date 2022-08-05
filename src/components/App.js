@@ -161,7 +161,7 @@ function App() {
       <ul>
         {states.map((item, index) => {
           return (
-            <StateComponent
+            <State
               id={`state${index + 1}`}
               key={`state${index + 1}`}
               state={item}
