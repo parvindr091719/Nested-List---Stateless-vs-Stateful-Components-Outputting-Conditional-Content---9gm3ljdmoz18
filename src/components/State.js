@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import CitiesComponent from "./CitiesComponent";
+import Cities from "./Cities";
 
-function StateComponent(props) {
+function State(props) {
   const [isVisible, setIsVisible] = useState(false);
 
   const clickHandler = () => {
@@ -28,4 +28,4 @@ function StateComponent(props) {
   );
 }
 
-export default StateComponent;
+export default State;
