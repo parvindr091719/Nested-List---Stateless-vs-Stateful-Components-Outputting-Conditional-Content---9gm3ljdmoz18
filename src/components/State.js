@@ -15,7 +15,7 @@ function State(props) {
         <ul>
           {props.state.cities.map((item, index) => {
             return (
-              <CitiesComponent
+              <Town
                 id={`city${index + 1}`}
                 key={`city${index + 1}`}
                 city={item}
