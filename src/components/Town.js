@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-function TownComponent(props) {
+function Town(props) {
   return <li id={props.id}>{props.town.name}</li>;
 }
 
-export default TownComponent;
+export default Town;
