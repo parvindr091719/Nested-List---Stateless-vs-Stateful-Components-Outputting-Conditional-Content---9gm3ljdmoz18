@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import TownComponent from "./TownComponent";
+import Town from "./Town";
 
-function CitiesComponent(props) {
+function Cities(props) {
   const [isTownVisible, setIsTownVisible] = useState(false);
 
   const clickHandler = (e) => {
@@ -17,7 +17,7 @@ function CitiesComponent(props) {
         <ul>
           {props.city.towns.map((item, index) => {
             return (
-              <TownComponent
+              <Town
                 id={`town${index + 1}`}
                 key={`town${index + 1}`}
                 town={item}
@@ -30,4 +30,4 @@ function CitiesComponent(props) {
   );
 }
 
-export default CitiesComponent;
+export default Cities;
